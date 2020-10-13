@@ -112,7 +112,7 @@ if [[ ! -f .entrypoint-check-done ]]; then
   if [[ $XXH_VERBOSE == '1' || $XXH_VERBOSE == '2' ]]; then
     echo "Extract AppImage" 1>&2
   fi
-  ./xonsh --appimage-extract > /dev/null
+  tar -xf ./xonsh > /dev/null
   mv squashfs-root xonsh-squashfs && mv xonsh xonsh-disabled
   ln -s ./xonsh-squashfs/usr/bin/xonsh xonsh
   echo $check_result > .entrypoint-check-done

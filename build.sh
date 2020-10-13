@@ -14,7 +14,7 @@ do
 done
 
 #url='https://github.com/xxh/xonsh-appimage/raw/master/result/xonsh-x86_64.AppImage' 
-url='https://github.com/xonsh/xonsh/releases/download/0.9.22/xonsh-x86_64.AppImage'
+url='https://github.com/anki-code/examples/raw/main/xonsh-appimage.tar.bz2'
 appimage_name='xonsh'
 
 rm -rf $build_dir
